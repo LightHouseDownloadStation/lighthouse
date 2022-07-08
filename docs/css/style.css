@@ -1,0 +1,86 @@
+.downloadBtn {
+    border: 1px solid #42b983;
+    border-radius: 6px;
+    color: #42b983;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    padding: 10px 24px
+}
+
+.downloadBtn:hover {
+    background: #eee4f5;
+    color: #42b983;
+    text-decoration: none;
+}
+
+/* Buttons */
+.btn-float {
+    position          : fixed;
+    /* Fixed/sticky position */
+    right             : 30px;
+    /* Place the button 30px from the right */
+    z-index           : 233;
+    /* Make sure it does not overlap */
+    border-width      : 2px;
+    border-style      : solid;
+    border-color      : #42b983;
+    background-color  : #42b983;
+    color             : #f8f9fa;
+    height            : 40px;
+    width             : 40px;
+    border-radius     : 50%;
+    /* make it round */
+    text-align        : center;
+    font-size         : large;
+    transition        : background-color 0.5s, color 0.5s;
+    -moz-transition   : background-color 0.5s, color 0.5s;
+    /* Firefox 4 */
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    /* Safari and Chrome */
+    -o-transition     : background-color 0.5s, color 0.5s;
+    /* Opera */
+    margin            : 0px auto;
+    outline: none;
+}
+
+
+.btn-float-ios {
+    border-style      : none!important;
+    background-color  : transparent!important;
+    color             : #42b983!important;
+
+}
+
+
+.btn-float:visited {
+    color       : #f8f9fa;
+    border-color: #42b983;
+}
+
+.btn-float-ios:visited {
+    color       : #42b983!important;
+}
+
+.btn-float:hover {
+    background-color: #f8f9fa;
+    color           : #42b983;
+    border-color    : #42b983;
+}
+
+.btn-float-ios:hover {
+    color           : #42b983;
+}
+
+@media screen and (max-width: 1200px) {
+    .btn-float {
+        right: 15px;
+    }
+}
+
+.btn-top {
+    display: none;
+    /* hide the button at the beginning */
+    bottom : 70px;
+    /* Place the button at the bottom of the page */
+}

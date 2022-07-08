@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>灯塔LightHouse</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//jsdelivr.qmqaq.top/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="//bot.qmqaq.top/site-source/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="//bot.qmqaq.top/site-source/js/jquery.easing.min.js"></script>
+  <link rel="stylesheet" href="//bot.qmqaq.top/site-source/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="app"></div>
+
+<script>
+  window.$docsify = {
+  loadSidebar: true,
+  name: '灯塔LightHouse',
+  subMaxLevel: 5,
+  loadNavbar: true,
+  autoHeader: true,
+  
+};
+</script>
+  <!-- Docsify v4 -->
+  <script src="//jsdelivr.qmqaq.top/npm/docsify@4"></script>
+  <!-- 断网了 用sw.js -->
+  <script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+  </script>
+  <!-- 51统计 -->
+  <script>
+    !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"Jj1qp9Q5258I8Tya",ck:"Jj1qp9Q5258I8Tya",autoTrack:true,hashMode:true});
+  </script>
+  <!-- 各种插件 -->
+  <!-- 图片缩放 -->
+  <script src="//jsdelivr.qmqaq.top/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 回到顶部 -->
+  <script>
+    $(document).ready(function(){
+      // move down 20px, show the back to top button
+      $(window).scroll(function(){
+          if ($(window).scrollTop() > 20) {
+              $('#btn-top').fadeIn(500);
+          } else {
+              $('#btn-top').fadeOut(500);
+          }
+      });
+  
+      // scroll back to top
+      $('#btn-top').click(function(){
+          $('html, body').animate({scrollTop : 0}, 800);
+                  return false;
+                  });
+  });  
+  </script>
+  <button id="btn-top" class="btn-top btn-float" title="Go to top">
+    <i class="fa fa-angle-double-up fa-lg" aria-hidden="true"></i>
+  </button>
+</body>
+</html>
